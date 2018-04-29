@@ -7,7 +7,7 @@ const pouchHandler = require('express-pouchdb')(PouchDB)
 
 const corsOptions = {
   origin: process.env.WEB_HOST,
-  ccredentials: true
+  credentials: true
 }
 
 app.use('/', cors(corsOptions), pouchHandler) 
